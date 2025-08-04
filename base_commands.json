@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "commands": [
+        {
+            "id": "dwd.create_hierarchy_container",
+            "displayName": "Create Hierarchy Container",
+            "program": "python",
+            "startMode": "SingleSelectionSingleProcess",
+            "args": "\"${CurrentCommandDirectory}\\dwd-hierarchy-containers\\command_script.py\" ${id} ${name} ${notes} ${type}",
+            "cwd": "",
+            "redirectOutputs": true,
+            "contextMenu": {
+                "basePath": "DigitalWaveDynamics",
+                "enabledFor": "WorkUnit,ActorMixer,SwitchContainer,RandomSequenceContainer, BlendContainer, MusicSwitchContainer, MusicPlaylistContainer"
+            }
+        }
+    ]
+}
