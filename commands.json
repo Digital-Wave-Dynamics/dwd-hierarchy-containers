@@ -1,0 +1,56 @@
+{
+    "version": 1,
+    "commands": [
+        {
+            "id": "dwd.create_hierarchy_container",
+            "displayName": "Create Hierarchy Container",
+            "program": "python",
+            "startMode": "SingleSelectionSingleProcess",
+            "args": "-Xfrozen_modules=off \"${CurrentCommandDirectory}\\DigitalWaveDynamics\\dwd-hierarchy-containers\\command_script.py\" -i create -id ${id}",
+            "cwd": "",
+            "redirectOutputs": true,
+            "contextMenu": {
+                "basePath": "DigitalWaveDynamics",
+                "enabledFor": "WorkUnit,ActorMixer,SwitchContainer,RandomSequenceContainer, BlendContainer, MusicSwitchContainer, MusicPlaylistContainer"
+            }
+        },
+        {
+            "id": "dwd.open_command_folder",
+            "displayName": "Open Command Folder",
+            "program": "explorer",
+            "startMode": "SingleSelectionSingleProcess",
+            "args": "${CurrentCommandDirectory}\\DigitalWaveDynamics\\dwd-hierarchy-containers",
+            "cwd": "",
+            "redirectOutputs": true,
+            "mainMenu": {
+                "basePath": "Add-ons/DigitalWaveDynamics"
+            }
+        },
+        {
+            "id": "user.insert.TestingSetup.child",
+            "displayName": "TestingSetup",
+            "program": "python",
+            "startMode": "SingleSelectionSingleProcess",
+            "args": "\"${CurrentCommandDirectory}\\DigitalWaveDynamics\\dwd-hierarchy-containers\\command_script.py\" -i insert -name TestingSetup -id ${id} --user",
+            "cwd": "",
+            "redirectOutputs": true,
+            "contextMenu": {
+                "basePath": "DigitalWaveDynamics/New Child",
+                "enabledFor": "WorkUnit,ActorMixer,SwitchContainer,RandomSequenceContainer, BlendContainer, MusicSwitchContainer, MusicPlaylistContainer"
+            }
+        },
+        {
+            "id": "user.insert.TestingSetup.parent",
+            "displayName": "TestingSetup",
+            "program": "python",
+            "startMode": "SingleSelectionSingleProcess",
+            "args": "\"${CurrentCommandDirectory}\\DigitalWaveDynamics\\dwd-hierarchy-containers\\command_script.py\" -i insert -name TestingSetup -id ${id} --user",
+            "cwd": "",
+            "redirectOutputs": true,
+            "contextMenu": {
+                "basePath": "DigitalWaveDynamics/New Parent",
+                "enabledFor": "ActorMixer,SwitchContainer,RandomSequenceContainer, BlendContainer, MusicSwitchContainer, MusicPlaylistContainer,Sound"
+            }
+        }
+    ]
+}
