@@ -27,11 +27,11 @@
             }
         },
         {
-            "id": "dwd.insert.TestingSetup.child",
+            "id": "user.insert.TestingSetup.child",
             "displayName": "TestingSetup",
             "program": "python",
             "startMode": "SingleSelectionSingleProcess",
-            "args": "\"${CurrentCommandDirectory}\\DigitalWaveDynamics\\dwd-hierarchy-containers\\command_script.py\" insert TestingSetup ${id} ${name} ${notes} ${type}",
+            "args": "\"${CurrentCommandDirectory}\\DigitalWaveDynamics\\dwd-hierarchy-containers\\command_script.py\" -i insert -name TestingSetup -id ${id} --user",
             "cwd": "",
             "redirectOutputs": true,
             "contextMenu": {
@@ -40,11 +40,11 @@
             }
         },
         {
-            "id": "dwd.insert.TestingSetup.parent",
+            "id": "user.insert.TestingSetup.parent",
             "displayName": "TestingSetup",
             "program": "python",
             "startMode": "SingleSelectionSingleProcess",
-            "args": "\"${CurrentCommandDirectory}\\DigitalWaveDynamics\\dwd-hierarchy-containers\\command_script.py\" insert TestingSetup ${id} ${name} ${notes} ${type}",
+            "args": "\"${CurrentCommandDirectory}\\DigitalWaveDynamics\\dwd-hierarchy-containers\\command_script.py\" -i insert -name TestingSetup -id ${id} --user",
             "cwd": "",
             "redirectOutputs": true,
             "contextMenu": {
