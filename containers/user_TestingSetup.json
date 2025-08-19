@@ -1,0 +1,84 @@
+{
+    "name": "TestingSetup",
+    "type": "ActorMixer",
+    "notes": "",
+    "children": [
+        {
+            "name": "BlendContainer",
+            "type": "BlendContainer",
+            "notes": "",
+            "children": [
+                {
+                    "name": "Random Container",
+                    "type": "RandomSequenceContainer",
+                    "notes": "",
+                    "children": []
+                },
+                {
+                    "name": "Random Container_01",
+                    "type": "RandomSequenceContainer",
+                    "notes": "",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "BlendContainer_01",
+            "type": "BlendContainer",
+            "notes": "",
+            "children": [
+                {
+                    "name": "BlendContainer_01_Child",
+                    "type": "BlendContainer",
+                    "notes": "",
+                    "children": []
+                },
+                {
+                    "name": "New Switch Container",
+                    "type": "SwitchContainer",
+                    "notes": "",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "BlendContainer_02",
+            "type": "BlendContainer",
+            "notes": "",
+            "children": [
+                {
+                    "name": "New Sequence Container",
+                    "type": "RandomSequenceContainer",
+                    "notes": "",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "BlendContainer_03",
+            "type": "BlendContainer",
+            "notes": "",
+            "children": [
+                {
+                    "name": "New Random Container",
+                    "type": "RandomSequenceContainer",
+                    "notes": "",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "BlendContainer_04",
+            "type": "BlendContainer",
+            "notes": "",
+            "children": [
+                {
+                    "name": "New Random Container",
+                    "type": "RandomSequenceContainer",
+                    "notes": "",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}
